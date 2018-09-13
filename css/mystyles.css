@@ -1,0 +1,75 @@
+/* Sophisticated */
+/* font pairing = "Ovo" & "Muli" */
+/* split complementary colors */
+
+.sophisticated-heading {
+    font-family: 'Ovo', serif;
+    font-size: 40px;
+}
+
+.sophisticated-paragraph {
+    font-family: 'Muli', sans-serif;
+}
+
+/* Energetic */
+/* font pairing = "Sedgwick Ave Display" & "Stint Ultra Expanded"*/
+/* complementary colors */
+
+.energetic-heading {
+    font-family: 'Sedgwick Ave Display', sans-serif;
+    font-size: 60px;
+    font-weight: lighter;
+}
+
+.energetic-paragraph {
+    font-family: 'Stint Ultra Expanded', serif;
+}
+
+/* Relaxed */
+/* font pairing ="Delius Unicase" & "Raleway" */
+/* analogous colors */
+
+.relaxed-heading {
+    font-family: 'Delius Unicase', sans-serif;
+    font-size: 60px;
+    font-weight: lighter;    
+}
+
+.relaxed-paragraph {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* corporate */
+/* font pairing = "Oswald" & "Quattrocento*/
+/* monochromatic or one color */
+
+.corporate-heading {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+}
+
+.corporate-paragraph {
+    font-family: 'Quattrocento', serif;
+    
+}
+
+
+/* fun */
+/* font pairing = "Press Start 2P" & "Press Start 2P" */
+/* triad colors */
+.fun-heading {
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.fun-paragraph {
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+
+
+
