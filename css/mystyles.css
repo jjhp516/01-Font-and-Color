@@ -1,75 +1,257 @@
-/* Sophisticated */
-/* font pairing = "Ovo" & "Muli" */
-/* split complementary colors */
+/* #region base styles */
+.wrapper {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 700px;
+    margin-top: 100px;
+}
 
-.sophisticated-heading {
-    font-family: 'Ovo', serif;
+@media (max-width: 700px) {
+    .wrapper {
+        margin-top: 40px;
+    }
+}
+
+a {
+    display: inline-block;
+    padding: 10px 25px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
     font-size: 40px;
 }
 
-.sophisticated-paragraph {
-    font-family: 'Muli', sans-serif;
+p {
+    line-height: 1.4;
 }
+/* #endregion */
+
+
+
+/* Sophisticated */
+/* font pairing = "Ovo" & "Muli" */
+/* complementary colors */
+/* #region INDEX */
+.sophisticated {
+    background: #251933;
+}
+
+.sophisticated h1, .sophisticated h2, .sophisticated a {
+    font-family: 'Ovo', serif;
+    font-weight: normal;
+    color: #CCCB52;
+}
+
+.sophisticated p {
+    font-family: 'Muli', sans-serif;
+    color: #CCCB52;
+}
+
+.sophisticated hr {
+    border: none;
+    border-top: 3px double #CCCB52;
+    color: #CCCB52;
+    overflow: visible;
+    text-align: center;
+    font-weight: bold;
+    height: 5px;
+}
+
+.sophisticated hr:after {
+    background: #251933;
+    content: '§';
+    padding: 0px 5px;
+    position: relative;
+    top: -13px;
+}
+
+.sophisticated a {
+    background: #CCCB52;
+    color: #251933;    
+    border-radius: 10px 100px / 120px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase; 
+    text-decoration: none;
+}
+/* #endregion */
+
+
 
 /* Energetic */
 /* font pairing = "Sedgwick Ave Display" & "Stint Ultra Expanded"*/
-/* complementary colors */
+/* triad colors */
+/* #region PAGE 2 */
+.energetic {
+    background: rgb(255, 241, 87);
+}
 
-.energetic-heading {
+.energetic h1, .energetic h2, .energetic a {
     font-family: 'Sedgwick Ave Display', sans-serif;
-    font-size: 60px;
-    font-weight: lighter;
+    font-weight: normal;
+    color: #FF0900;
 }
 
-.energetic-paragraph {
+.energetic p {
     font-family: 'Stint Ultra Expanded', serif;
+    color: #0100CC;
+    font-weight: bold;
+    text-transform: uppercase;
 }
+
+.energetic hr {
+    border: none;
+    border-top: 16px dashed #FF0900;
+}
+
+.energetic a {
+    background: #FF0900;
+    color: rgb(255, 234, 0);
+    font-size: 22px;
+    border-style: outset;
+}
+
+/* #endregion */
+
+
 
 /* Relaxed */
 /* font pairing ="Delius Unicase" & "Raleway" */
 /* analogous colors */
+/* #region PAGE 3 */
+.relaxed {
+    background: rgb(225, 220, 180);
+}
 
-.relaxed-heading {
+.relaxed h1, .relaxed h2, .relaxed a {
     font-family: 'Delius Unicase', sans-serif;
-    font-size: 60px;
-    font-weight: lighter;    
+    font-weight: lighter;
+    color: rgb(90, 145, 0);    
 }
 
-.relaxed-paragraph {
+.relaxed p {
     font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    color: rgb(0, 130, 120);
 }
 
+.relaxed hr {
+    border: none;
+    border-top: 3px dotted rgb(0, 130, 120);
 
-/* corporate */
+}
+
+.relaxed a {
+    text-decoration: underline overline dotted rgb(0, 130, 120);
+    padding: 16px 20px 0 0;
+    font-size: 20px;
+}
+/* #endregion */
+
+
+
+/* Corporate */
 /* font pairing = "Oswald" & "Quattrocento*/
-/* monochromatic or one color */
+/* split complementary */
+/* #region PAGE 4 */
+.corporate{
+    background: #D9E2FF;
+}
 
-.corporate-heading {
+.corporate h1, .corporate h2, .corporate a {
     font-family: 'Oswald', sans-serif;
-    font-size: 40px;
+    color: #C77DA0;
 }
 
-.corporate-paragraph {
-    font-family: 'Quattrocento', serif;
-    
-}
-
-
-/* fun */
-/* font pairing = "Press Start 2P" & "Press Start 2P" */
-/* triad colors */
-.fun-heading {
-    font-family: 'Press Start 2P', sans-serif;
-    font-size: 40px;
+.corporate h1 {
     text-transform: uppercase;
+    color: #00818A;
+}
+ 
+.corporate p {
+    font-family: 'Quattrocento', serif;
+    color: #A83F00;
 }
 
-.fun-paragraph {
+.corporate a {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    border-left: 12px solid #00818A;
+    padding: 0 40px 0 8px;
+}
+/* #endregion */
+
+
+
+/* Fun */
+/* font pairing = "Press Start 2P" & "Press Start 2P" */
+/* one color PAGE 5 */
+/* #region */
+.fun {
+    background: black;
+}
+
+.fun h1, .fun h2 {
     font-family: 'Press Start 2P', sans-serif;
-    font-size: 16px;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: rgb(204, 0, 255);
+}
+
+.fun h2 {
+    font-size: 28px;
     line-height: 1.4;
 }
 
+.fun p {
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 14px;
+    color: white;
+    line-height: 1.6;
+}
 
+.fun img {
+    margin-bottom: 16px;
+}
+
+.fun a {
+    width: 20%;
+    min-width: 130px;
+    font-family: 'Press Start 2P', sans-serif;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    text-decoration: none;
+    padding: 30px 10px 30px 0;
+    margin: 0 12px 0 0;
+}
+
+.fun a:hover {
+    color: rgb(204, 0, 255);
+}
+
+.fun hr {
+    border: none;
+    border-top: 3px dashed white;
+    overflow: visible;
+    height: 16px;     
+}
+
+.fun hr:after {
+    background: black;
+    content: url(../img/pixel-plane01.png);
+    padding: 0 12px;
+    position: relative;
+    top: -13px;
+    left: -10px;
+}
+/* #endregion */
 
 
